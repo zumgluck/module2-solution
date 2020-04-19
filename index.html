@@ -1,1 +1,123 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /*Base styles*/
+
+        * {
+            box-sizing: border-box;
+
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .heading {
+            text-align: center;
+            font-size: 1.75em;
+        }
+        .row {
+            margin-bottom: 15px;
+        }
+        .row > div {
+            border: 1px solid black;
+            text-align: justify;
+            padding: 1%;
+        }
+        .name_1, .name_2, .name_3 {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            text-align: right;
+            border: 1px solid black;
+            font-size: 1.25em;
+        }
+
+        .name_1 {
+            background-color: cornflowerblue;
+        }
+        .name_2 {
+            background-color: lightblue;
+        }
+        .name_3 {
+            background-color: deepskyblue;
+        }
+
+        .p1, .p2, .p3 {
+            background-color: darkseagreen;
+            position: relative;
+            text-align: justify;
+        }
+
+        /*media queries*/
+
+        /*Desktop devices*/
+        @media (min-device-width: 992px) {
+            .p1, .p2, .p3 {
+                width: 29%;
+                float: left;
+                margin: 1%
+            }
+        }
+        /*Tablet devices*/
+        @media (min-device-width: 768px) and (max-device-width: 991px){
+            .p1 {
+                width: 48%;
+                float: left;
+                text-align: center;
+                margin: 1%
+            }
+            .p2 {
+                width: 48%;
+                float: left;
+                text-align: center;
+                margin: 1%
+            }
+            .p3 {
+                width: 98%;
+                float: left;
+                text-align: center;
+                margin: 1%
+            }
+        }
+        @media (max-device-width: 767px){
+            .p1, .p2, .p3 {
+                width: 98%;
+                float: left;
+                text-align: center;
+                margin: 1%
+            }
+        }
+
+    </style>
+</head>
+<header>
+    <p class="heading">Media Queries</p>
+</header>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="p1">
+            <span class="name_1">Alora</span>
+            <p>Lorem ipsum dolorem, Lorem ipsum dolorem, Lorem ipsum dolorem Lorem ipsum dolorem, Lorem ipsum dolorem</p>
+        </div>
+        <div class="p2">
+            <span class="name_2">Alora</span>
+            <p>Lorem ipsum dolorem, Lorem ipsum dolorem, Lorem ipsum dolorem Lorem ipsum dolorem, Lorem ipsum dolorem</p>
+        </div>
+        <div class="p3">
+            <span class="name_3">Alora</span>
+            <p>Lorem ipsum dolorem, Lorem ipsum dolorem, Lorem ipsum dolorem Lorem ipsum dolorem, Lorem ipsum dolorem</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
